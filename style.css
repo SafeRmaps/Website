@@ -1,0 +1,290 @@
+.gradient-1 {
+    width: 200vh;
+    height: 200vh;
+    position: absolute;
+    left: 50%;
+    top: -70%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(139, 220, 255, 0.5) 0%, rgba(17, 17, 17, 0) 100%);
+}
+
+.gradient-2 {
+    z-index: -100;
+    width: 200vh;
+    height: 200vh;
+    position: absolute;
+    z-index: 1;
+    left: -50%;
+    top: -20%;
+    background: radial-gradient(38.17% 38.17% at 50% 50%, rgb(129, 61, 85) 0%, rgba(17, 17, 17, 0) 100%);
+}
+
+.header {
+    width: 40vw;
+    margin-left: 100px;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header>h1.title {
+    margin-bottom: 30px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 115.9%;
+    letter-spacing: -0.04em;
+}
+
+.header>p.subtitle {
+    margin-bottom: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.header-image {
+    height: 120vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.goal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.goal>h1.title {
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 82px;
+}
+
+.goal>.subtitle {
+    margin: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.about {
+    background-image: url("./Road.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 100px;
+
+}
+
+.about-model {
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 101.9%;
+    text-align: center;
+}
+
+.problem {
+    padding: 20px 100px;
+    margin-top: 200px;
+    display: flex;
+    gap: 200px;
+    font-size: 20px;
+    align-items: center;
+    background: linear-gradient(180deg, #000000 26.59%, rgba(0, 0, 0, 0) 98.34%);
+
+}
+
+.problem>h1.title {
+    margin-bottom: 30px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 115.9%;
+    letter-spacing: -0.04em;
+}
+
+.problem-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 50px 100px;
+    margin: 3;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+    text-align: center;
+}
+
+.stat-title {
+    height: 100px;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+
+.divider {
+    position: relative;
+}
+
+.road-divider {
+    width: 100%;
+    z-index: 4;
+}
+
+.backing {
+    padding: 50px;
+    z-index: 5;
+}
+
+.backing>h1.title {
+    text-align: center;
+}
+
+.footer {
+    margin: 0 100px;
+    padding: 50px;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+
+
+.footer-column-1 {
+    max-width: 50%;
+}
+
+.footer-column-1>h1 {
+    font-size: 75px;
+    line-height: 120%;
+    margin-bottom: 30px;
+    width: 1;
+}
+
+.footer-column-1>.social-media {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-column-2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    /* or 50px */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+}
+
+ul.footer-nav-contents {
+    list-style: none;
+}
+
+.mobile-logo{
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .problem-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat3 {
+        grid-column: 1/3;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+        margin: 0 30px;
+        padding: 30px 20px;
+    }
+
+    .footer-column-1 {
+        max-width: 100%;
+    }
+
+    h1.title.title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .footer-column-2 {
+        text-align: center;
+    }
+
+    .problem-stats {
+        margin: 50px 30px;
+    }
+    .problem{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+        margin-top: 30px;
+    }
+    .about-model{
+        padding: 0 30px;
+    }
+    .header-image{
+        display: none;
+    }
+    .header{
+        width: 80vw;
+        margin: 10vw;
+        align-items: center;
+        text-align: center;
+    }
+    .mobile-logo{
+        display: block;
+        margin-bottom: 75px;
+    }
+}
+
+@media (max-width: 600px) {
+    .problem-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat3 {
+        grid-column: 1/2;
+    }
+
+}

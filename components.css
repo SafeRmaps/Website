@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Sans+3:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.gradient{
+    z-index: 1;
+}
+
+body{
+    background-color: #111;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    user-select: none;
+}
+
+.logo-image{
+    width: 81px;
+    height: 48px;
+}
+
+.nav-contents{
+    display: flex;
+}
+
+.nav-contents > li{
+    list-style: none;
+    padding: 10px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px transparent solid;
+}
+
+.nav-contents > li:hover{
+    border: 1px white solid;
+}
+
+button {
+    user-select: none;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 36px;
+    background-color: #000;
+    border-radius: 40px;
+    color: white;
+    padding: 10px 40px;
+    width: fit-content;
+    cursor: pointer;
+    border: 2px transparent solid;
+    outline: none;
+}
+
+button:hover, button:focus, button:active {
+    color: #fff;
+    border: 2px #fff solid;
+    background: transparent;
+}
+
+img{
+    user-select: none;
+}
+
+h1.title {
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+p.subtitle {
+    font-family: 'Inter';
+    font-size: 18px;
+}
